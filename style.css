@@ -21,8 +21,8 @@ input[type="checkbox"]{
     width: 175px;
     background-color: white;
     border-radius: 5rem;
-    transition: background-color .2s;
     box-shadow: 0 0 15px black;
+    transition: background-color .2s;
 }
 
 input[type="checkbox"]::after {
@@ -36,4 +36,14 @@ input[type="checkbox"]::after {
     border-radius: 50%;
     background-color: rgb(47,47,68);
     transition: left .2s;
+}
+
+
+input[type="checkbox"]:checked{
+    background-color: rgb(98,249,173);
+
+}
+
+input[type="checkbox"]:checked::after{
+    left: 70%;
 }
