@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: gray;
+    height: 100vh;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    position: relative;
+    height: 100px;
+    width: 175px;
+    background-color: white;
+    border-radius: 5rem;
+    transition: background-color .2s;
+    box-shadow: 0 0 15px black;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(47,47,68);
+    transition: left .2s;
+}
