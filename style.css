@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    --body-bg: rgb(222, 227, 237);
+    --text-color: rgb(47,47,68);
+}
+
+body.dark-mode{
+    --body-bg: rgb(47,47,68);
+    --text-color: (215,215,225);
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color)
+}
+
 .container {
     background: gray;
     height: 100vh;
